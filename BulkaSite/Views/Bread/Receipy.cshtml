@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Receipy";
+}
+@model IEnumerable <BulkaSite.Models.Bread>
+<h2>Receipy</h2>
+<div>
+@foreach( var b in Model)
+{
+  <h3>@b.Name</h3>
+  <p>@b.Receipt</p>
+}
+
+</div>
+
